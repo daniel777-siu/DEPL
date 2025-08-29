@@ -1,0 +1,92 @@
+<section id="accountView" class="section create-section">
+  <div class="form-card">
+    <div class="card-header">
+      <div>
+        <h2 class="card-title">Mi Cuenta</h2>
+        <p class="card-subtitle">Información de tu perfil y lenguajes</p>
+      </div>
+      <a href="#/main" class="card-back">← Inicio</a>
+    </div>
+    <div class="card-body">
+      <div class="user-header" style="display:flex;align-items:center;gap:12px;padding:10px 12px;background:#0f142e;border:1px solid #2d3349;border-radius:12px;margin-bottom:14px;">
+        <div class="avatar" style="width:48px;height:48px;border-radius:12px;background:#171E4A;color:#fff;display:flex;align-items:center;justify-content:center;border:1px solid #2d3349;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 12c2.761 0 5-2.686 5-6s-2.239-6-5-6-5 2.686-5 6 2.239 6 5 6zm0 2c-4.418 0-8 2.91-8 6.5V22h16v-1.5c0-3.59-3.582-6.5-8-6.5z"/></svg>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <strong id="accEmailHeader" style="color:#e5e7eb;font-size:1.05rem;">&nbsp;</strong>
+          <span id="accRoleHeader" class="muted" style="color:#9ca3af;font-size:.9rem;">&nbsp;</span>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-row full">
+          <label>Email</label>
+          <div id="accEmail" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Nombre</label>
+          <div id="accName" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Cohorte</label>
+          <div id="accCohort" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row full">
+          <label>Rol</label>
+          <div id="accRole" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Teléfono</label>
+          <div id="accPhone" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Ciudad</label>
+          <div id="accPlace" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Disponibilidad</label>
+          <div id="accDisponibility" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Horario</label>
+          <div id="accSchedule" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Clan</label>
+          <div id="accClan" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row">
+          <label>Inglés</label>
+          <div id="accEnglish" class="muted" style="padding:8px 12px;background:#111827;border:1px solid #374151;border-radius:8px;">—</div>
+        </div>
+        <div class="form-row full">
+          <label>Descripción</label>
+          <div id="accDescription" class="muted" style="padding:10px 12px;background:#111827;border:1px solid #374151;border-radius:8px;min-height:56px;white-space:pre-wrap;">—</div>
+        </div>
+        <div class="form-row full">
+          <div class="helper" style="color:#9ca3af;">
+            Nota: Cohorte, ciudad, horario, clan e inglés pueden requerir actualización por un administrador.
+          </div>
+        </div>
+      </div>
+      <hr style="border-color:#2d3349;margin:16px 0;" />
+      <div class="form-grid">
+        <div class="form-row full">
+          <label>Mis lenguajes</label>
+          <ul id="userLangList" class="muted" style="margin:8px 0 0;padding-left:0;list-style:none;display:flex;gap:8px;flex-wrap:wrap;color:#d1d5db;"></ul>
+        </div>
+        <div class="form-row full">
+          <label>Selecciona tus lenguajes</label>
+          <form id="bulkAssignLangForm" class="inline-form" style="display:block;">
+            <div id="langChecklist" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 220px));justify-content:center;gap:10px;padding:12px;background:#111827;border:1px solid #374151;border-radius:8px;color:#e5e7eb;">
+              <div class="muted" style="grid-column:1/-1;">Cargando lenguajes…</div>
+            </div>
+            <button type="submit" class="btn-primary" style="margin-top:12px;">Asignar seleccionados</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <a href="#/account-edit" id="accEditBtn" class="btn-secondary" role="button">Editar perfil</a>
+    </div>
+  </div>
+</section>

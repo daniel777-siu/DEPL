@@ -1,0 +1,21 @@
+<section id="createTeamView" class="section create-section">
+  <div class="form-card">
+    <div class="card-header">
+      <div>
+        <h2 class="card-title">Equipos · Crear equipo</h2>
+        <p class="card-subtitle">Define el equipo y su propósito</p>
+      </div>
+      <a href="#/teams" class="card-back">← Volver a Equipos</a>
+    </div>
+    <div class="card-body">
+      <form id="createTeamForm" class="form-grid">
+        <div class="form-row full"><label>Nombre del equipo</label><input name="team_name" placeholder="Ej: Alpha Squad" required /></div>
+        <div class="form-row full"><label>Descripción</label><textarea name="description" rows="3" placeholder="Objetivo, stack, notas..."></textarea><div class="helper">Puedes editar esta información más tarde.</div></div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <a href="#/teams" class="btn-secondary" role="button">Cancelar</a>
+      <button type="submit" form="createTeamForm" class="btn-primary">Crear</button>
+    </div>
+  </div>
+</section>

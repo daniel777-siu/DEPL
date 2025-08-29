@@ -1,0 +1,68 @@
+<section id="createUserView" class="section create-section">
+  <div class="form-card">
+    <div class="card-header">
+      <div>
+        <h2 class="card-title">Perfiles · Crear usuario</h2>
+        <p class="card-subtitle">Completa la información del nuevo perfil</p>
+      </div>
+      <a href="#/profiles" class="card-back">← Volver a Perfiles</a>
+    </div>
+    <div class="card-body">
+      <form id="createUserForm" class="form-grid">
+    <div class="form-row"><label>Nombre</label><input name="name" placeholder="Nombre y apellido" required /></div>
+    <div class="form-row"><label>Cohorte</label><input name="cohort" placeholder="Ej: 2025-01" required /></div>
+    <div class="form-row"><label>Email</label><input type="email" name="email" required /></div>
+    <div class="form-row"><label>Teléfono</label><input name="phone" placeholder="Ej: +57 300 000 0000" /></div>
+    <div class="form-row"><label>Ciudad</label>
+      <select name="place" required>
+        <option value="" disabled selected>Selecciona una ciudad</option>
+        <option value="Medelin">Medellín</option>
+        <option value="Barranquilla">Barranquilla</option>
+      </select>
+    </div>
+    <div class="form-row"><label>Disponibilidad</label>
+      <select name="disponibility" required>
+        <option value="" disabled selected>Selecciona disponibilidad</option>
+        <option value="1">Tiempo completo</option>
+        <option value="2">Medio tiempo</option>
+      </select>
+    </div>
+    <div class="form-row"><label>Horario</label>
+      <select name="schedule" required>
+        <option value="" disabled selected>Selecciona un horario</option>
+        <option value="am">Mañana</option>
+        <option value="pm">Tarde</option>
+      </select>
+    </div>
+    <div class="form-row"><label>Rol</label>
+      <select name="role" required>
+        <option value="coder" selected>Coder</option>
+        <option value="team leader">Team Leader</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    <div class="form-row"><label>Clan</label>
+      <select name="clan" required>
+        <option value="" disabled selected>Selecciona un clan</option>
+      </select>
+    </div>
+    <div class="form-row"><label>Inglés</label>
+      <select name="english_level" required>
+        <option value="" disabled selected>Selecciona nivel</option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="B1">B1</option>
+        <option value="B2/C">B2/C</option>
+      </select>
+    </div>
+    <div class="form-row full"><label>Descripción</label><textarea name="description" rows="3" placeholder="Resumen, intereses, stack..."></textarea><div class="helper">Este texto ayuda a los equipos a conocerte mejor.</div></div>
+    <div class="form-row"><label>Contraseña temporal</label><input type="password" name="password" placeholder="Mín. 8 caracteres" required /></div>
+
+      </form>
+    </div>
+    <div class="card-footer">
+      <a href="#/profiles" class="btn-secondary" role="button">Cancelar</a>
+      <button type="submit" form="createUserForm" class="btn-primary">Crear</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+<section id="adminUserEditView" class="section create-section">
+  <div class="form-card">
+    <div class="card-header">
+      <div>
+        <h2 class="card-title">Editar usuario (admin)</h2>
+        <p class="card-subtitle">Actualiza información extendida del usuario</p>
+      </div>
+      <a href="#/profiles" class="card-back">← Volver a Perfiles</a>
+    </div>
+    <div class="card-body">
+      <form id="adminUserEditForm" class="form-grid" style="row-gap:12px;column-gap:12px;">
+        <div class="form-row">
+          <label>Nombre</label>
+          <input id="f_name" type="text" placeholder="Nombre" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input id="f_email" type="email" placeholder="email" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Teléfono</label>
+          <input id="f_phone" type="text" placeholder="teléfono" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Cohorte</label>
+          <input id="f_cohort" type="text" placeholder="Ej: 2024-2" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Ciudad</label>
+          <input id="f_place" list="citiesList" type="text" placeholder="Ej: Bogotá" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+          <datalist id="citiesList"></datalist>
+        </div>
+        <div class="form-row">
+          <label>Disponibilidad</label>
+          <input id="f_disponibility" type="text" placeholder="Ej: tardes" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Horario</label>
+          <input id="f_schedule" type="text" placeholder="Ej: 6-9pm" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Rol</label>
+          <input id="f_role" type="text" placeholder="rol" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Clan</label>
+          <input id="f_clan" list="clansList" type="text" placeholder="Nombre del clan" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+          <datalist id="clansList"></datalist>
+        </div>
+        <div class="form-row">
+          <label>Inglés</label>
+          <input id="f_english_level" type="text" placeholder="Ej: B1/Intermedio" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row full">
+          <label>Descripción</label>
+          <textarea id="f_description" rows="3" placeholder="Descripción" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:10px;color:#e5e7eb;resize:vertical;max-width:640px;width:100%;"></textarea>
+        </div>
+        <div class="form-row full">
+          <button type="submit" class="btn-primary">Guardar</button>
+        </div>
+        <div class="helper" style="color:#9ca3af;">
+          Asegúrate de completar <strong>Ciudad</strong> y <strong>Clan</strong> exactamente como existen en los catálogos.
+        </div>
+      </form>
+    </div>
+    <div class="card-footer" style="display:flex;gap:8px;">
+      <a href="#/profiles" class="btn-secondary" role="button">Volver</a>
+    </div>
+  </div>
+</section>

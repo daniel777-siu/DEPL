@@ -1,0 +1,146 @@
+/* Componente Navbar - Unificado para todas las vistas */
+.navbar {
+  background: #171E4A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 32px;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 8px;
+  transition: opacity 0.2s ease;
+}
+
+/* Desplazar enlaces un poco a la izquierda sin afectar logo ni sesión */
+.navbar nav { margin-left: -12px; }
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* User Menu */
+.user-menu {
+  position: relative;
+  margin-left: auto;
+}
+
+.user-menu .avatar {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.user-menu .avatar:hover {
+  transform: scale(1.05);
+}
+
+.user-menu .avatar.avatar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.user-menu .avatar.avatar-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.user-menu .user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 52px;
+  background: #fff;
+  color: #111;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  min-width: 240px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  padding: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
+
+.user-menu .user-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.user-menu .user-dropdown .menu {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.user-menu .user-dropdown .menu .divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 6px 0;
+}
+
+.user-menu .user-dropdown .menu .menu-item {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #111;
+  font-size: 14px;
+  transition: background-color 0.15s ease;
+}
+
+.user-menu .user-dropdown .menu .menu-item:hover {
+  background: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+  
+  .navbar ul {
+    gap: 6px;
+  }
+  
+  .navbar a {
+    margin-left: 6px;
+    font-size: 14px;
+  }
+}

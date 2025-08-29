@@ -1,0 +1,48 @@
+/* Componente Footer - Unificado para todas las vistas */
+.footer {
+  background: #2b2b2b;
+  color: #fff;
+  min-height: 240px; /* reserva espacio para evitar saltos mientras carga */
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer h3 {
+  color: #c024d5;
+  margin-bottom: 8px;
+}
+.footer .social-icons img {
+  width: 30px;
+  height: 30px; /* fija altura para evitar reflow */
+  margin-right: 10px;
+}
+.footer-img {
+  width: 200px;
+  max-width: 60vw;
+  height: auto; /* mantenemos ratio por CSS, dimensiones también se fijan en HTML */
+  display: block;
+}
+/* Barra inferior de copyright */
+.copyright {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0 16px;
+  font-size: 0.9rem;
+  color: #d1d5db;
+  background: #2b2b2b;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .footer .footer-content {
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,58 @@
+/* Styles for the extraSection block extracted from inline */
+#extraSection, #extraSection * {
+  margin: 0;
+  box-sizing: border-box;
+}
+#extraSection { font-family: Arial, sans-serif; background: #fff; color: #000; }
+
+/* NAVBAR */
+#extraSection .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #12174e; /* azul oscuro */
+  color: white;
+  position: sticky;
+  top: 0;
+}
+#extraSection .navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+#extraSection .navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* SECCIÓN */
+#extraSection .amigos {
+  text-align: center;
+  padding: 60px 20px;
+}
+#extraSection .amigos h2 {
+  background: #12174e;
+  color: white;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+#extraSection .cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+#extraSection .card {
+  max-width: 250px;
+  text-align: center;
+}
+#extraSection .card img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}

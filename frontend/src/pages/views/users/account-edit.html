@@ -1,0 +1,87 @@
+<section id="accountEditView" class="section create-section">
+  <div class="form-card">
+    <div class="card-header">
+      <div>
+        <h2 class="card-title">Editar perfil</h2>
+        <p class="card-subtitle">Próximamente: edición de datos</p>
+      </div>
+      <a href="#/account" class="card-back">← Volver a Cuenta</a>
+    </div>
+    <div class="card-body">
+      <form id="accountEditForm" class="form-grid" style="row-gap:12px;column-gap:12px;">
+        <div class="form-row">
+          <label>Nombre</label>
+          <input id="editName" type="text" placeholder="Tu nombre" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Teléfono</label>
+          <input id="editPhone" type="tel" placeholder="Tu teléfono" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Disponibilidad</label>
+          <input id="editDisponibility" type="text" placeholder="Ej: disponible tardes" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row full">
+          <label>Descripción</label>
+          <textarea id="editDescription" rows="4" placeholder="Cuéntanos sobre ti" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:10px;color:#e5e7eb;resize:vertical;max-width:640px;width:100%;"></textarea>
+        </div>
+        <!-- Campos extra (editables en UI, no se guardan aún en endpoint estándar) -->
+        <div class="form-row">
+          <label>Cohorte</label>
+          <input id="editCohort" type="text" placeholder="Ej: 2024-2" disabled title="Editable por admin" style="background:#0f142e;border:1px solid #2d3349;border-radius:8px;padding:8px 10px;color:#9ca3af;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Ciudad</label>
+          <input id="editPlace" type="text" placeholder="Ej: Bogotá" disabled title="Editable por admin" style="background:#0f142e;border:1px solid #2d3349;border-radius:8px;padding:8px 10px;color:#9ca3af;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Horario</label>
+          <input id="editSchedule" type="text" placeholder="Ej: tardes" disabled title="Editable por admin" style="background:#0f142e;border:1px solid #2d3349;border-radius:8px;padding:8px 10px;color:#9ca3af;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Clan</label>
+          <input id="editClan" type="text" placeholder="Nombre del clan" disabled title="Editable por admin" style="background:#0f142e;border:1px solid #2d3349;border-radius:8px;padding:8px 10px;color:#9ca3af;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Inglés</label>
+          <input id="editEnglish" type="text" placeholder="Ej: B1 / Intermedio" disabled title="Editable por admin" style="background:#0f142e;border:1px solid #2d3349;border-radius:8px;padding:8px 10px;color:#9ca3af;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row full">
+          <label>Email</label>
+          <input id="editEmail" type="email" placeholder="tu@email" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row full">
+          <label>Rol</label>
+          <input id="editRole" disabled style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#9ca3af;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row full">
+          <button type="submit" class="btn-primary">Guardar cambios</button>
+        </div>
+        <div class="helper" style="color:#9ca3af;">
+          Se guardan: nombre, email, teléfono, disponibilidad y descripción.
+        </div>
+        <div class="helper" style="color:#9ca3af;">
+          Cohorte, ciudad, horario, clan e inglés son gestionados por un administrador.
+        </div>
+      </form>
+      <hr style="border-color:#2d3349;margin:16px 0;" />
+      <form id="changePasswordForm" class="form-grid" style="row-gap:12px;column-gap:12px;">
+        <div class="form-row">
+          <label>Contraseña actual</label>
+          <input id="currPassword" type="password" autocomplete="current-password" placeholder="Tu contraseña actual" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row">
+          <label>Nueva contraseña</label>
+          <input id="newPassword" type="password" autocomplete="new-password" placeholder="Escribe tu nueva contraseña" style="background:#111827;border:1px solid #374151;border-radius:8px;padding:8px 10px;color:#e5e7eb;max-width:420px;width:100%;" />
+        </div>
+        <div class="form-row full">
+          <button type="submit" class="btn-primary">Cambiar contraseña</button>
+        </div>
+        <div class="helper">Por seguridad, el backend requiere tu contraseña actual.</div>
+      </form>
+    </div>
+    <div class="card-footer" style="display:flex;gap:8px;">
+      <a id="accBackBtn" href="#/account" class="btn-secondary" role="button">Volver</a>
+    </div>
+  </div>
+</section>
